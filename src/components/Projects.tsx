@@ -27,7 +27,7 @@ const projects: Project[] = [
 function ProjectCard({ image, title, subtitle, href }: Project) {
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-neutral-900 shadow-md shadow-black/10 dark:shadow-black/30 ring-1 ring-black/5 dark:ring-white/10 transition-transform duration-200">
-      <div className="relative h-56 w-full overflow-hidden">
+      <div className="relative h-56 w-full overflow-hidden border-b border-neutral-200 dark:border-neutral-700">
         <Image
           src={image}
           alt={title}
@@ -62,7 +62,7 @@ function ProjectCard({ image, title, subtitle, href }: Project) {
 export default function Projects() {
   return (
     <section id="projects" className="bg-neutral-100 dark:bg-neutral-800/60 px-8 py-24 md:px-20 lg:px-32">
-      <h2 className="mb-12 text-3xl font-bold text-neutral-900 dark:text-white md:text-4xl">
+      <h2 className="mb-12 text-center text-3xl font-bold text-neutral-900 dark:text-white md:text-left md:text-4xl">
         🚀 Shipped Projects.
       </h2>
 

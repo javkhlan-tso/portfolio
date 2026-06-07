@@ -39,17 +39,17 @@ const links = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-8 py-24 md:px-20 lg:px-32">
+    <section id="contact" className="px-8 py-24 text-center md:px-20 md:text-left lg:px-32">
       <h2 className="mb-4 text-3xl font-bold text-neutral-900 dark:text-white md:text-4xl">
         📬 Keep In Touch.
       </h2>
-      <p className="mb-12 max-w-xl text-lg leading-relaxed text-neutral-500 dark:text-neutral-400">
+      <p className="mb-12 text-lg leading-relaxed text-neutral-500 dark:text-neutral-400 md:max-w-xl">
         I&apos;m currently open to new opportunities. Whether you have a
         question, a project idea, or just want to say hi — my inbox is always
         open!
       </p>
 
-      <div className="flex flex-wrap gap-6">
+      <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:flex-wrap sm:items-center">
         {links.map((link) => (
           <a
             key={link.label}
@@ -57,7 +57,7 @@ export default function Contact() {
             target={link.href.startsWith("mailto") || link.href === "#" ? "_self" : "_blank"}
             rel="noopener noreferrer"
             aria-label={link.label}
-            className="flex items-center gap-3 rounded-xl bg-white dark:bg-neutral-900 px-5 py-3 text-sm font-medium text-neutral-700 dark:text-neutral-300 shadow-md shadow-black/10 dark:shadow-black/30 ring-1 ring-black/5 dark:ring-white/10 transition-all duration-200 hover:-translate-y-1 hover:text-neutral-900 dark:hover:text-white"
+            className="flex items-center justify-center gap-3 rounded-xl bg-white dark:bg-neutral-900 px-5 py-3 text-sm font-medium text-neutral-700 dark:text-neutral-300 shadow-md shadow-black/10 dark:shadow-black/30 ring-1 ring-black/5 dark:ring-white/10 transition-all duration-200 hover:-translate-y-1 hover:text-neutral-900 dark:hover:text-white sm:w-36"
           >
             <span className="text-neutral-500 dark:text-neutral-400">
               {link.icon}

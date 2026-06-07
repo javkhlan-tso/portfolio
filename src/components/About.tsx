@@ -3,12 +3,12 @@ import Image from "next/image";
 export default function About() {
   return (
     <section id="about" className="bg-neutral-100 dark:bg-neutral-800/60 px-8 py-24 md:px-20 lg:px-32">
-      <h2 className="mb-4 text-xl font-bold text-neutral-900 dark:text-white md:text-2xl">
+      <h2 className="mb-4 text-center text-xl font-bold text-neutral-900 dark:text-white md:text-left md:text-2xl">
         ⚡ About Me
       </h2>
 
       <div className="flex flex-col items-center gap-12 md:flex-row md:items-start md:gap-16">
-        <div className="flex flex-col gap-5 text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 md:flex-1">
+        <div className="flex flex-col gap-5 text-justify text-lg leading-relaxed text-neutral-600 dark:text-neutral-400 md:flex-1">
           <p>
             Hey! I&apos;m Javkhlan Tsogtsaikhan, I&apos;ve been close to a computer since an early age,
             and been passionate about it ever since. I really liked to build
