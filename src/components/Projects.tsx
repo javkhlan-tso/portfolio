@@ -1,4 +1,4 @@
-import Image from "next/image";
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 type Project = {
   image: string;
@@ -27,12 +27,12 @@ const projects: Project[] = [
 function ProjectCard({ image, title, subtitle, href }: Project) {
   return (
     <div className="group flex flex-col overflow-hidden rounded-2xl bg-white dark:bg-neutral-900 shadow-md shadow-black/10 dark:shadow-black/30 ring-1 ring-black/5 dark:ring-white/10 transition-transform duration-200">
-      <div className="relative h-56 w-full overflow-hidden border-b border-neutral-200 dark:border-neutral-700">
-        <Image
-          src={image}
+      <div className="h-56 w-full overflow-hidden border-b border-neutral-200 dark:border-neutral-700">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`${BASE}${image}`}
           alt={title}
-          fill
-          className="object-cover transition-transform duration-300 group-hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
 

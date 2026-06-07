@@ -7,8 +7,7 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_BASE_PATH: "/portfolio",
   },
   images: {
-    loader: "custom",
-    loaderFile: "./src/lib/imageLoader.ts",
+    unoptimized: true,
   },
 };
 

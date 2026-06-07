@@ -1,4 +1,4 @@
-import Image from "next/image";
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export default function Home() {
   return (
@@ -10,13 +10,12 @@ export default function Home() {
         Hi 👋 I&apos;m
       </p>
 
-      <div className="relative h-64 w-64 overflow-hidden rounded-full shadow-xl ring-4 ring-neutral-200 dark:ring-neutral-700 md:h-72 md:w-72 lg:h-80 lg:w-80">
-        <Image
-          src="/profile.png"
+      <div className="h-64 w-64 overflow-hidden rounded-full shadow-xl ring-4 ring-neutral-200 dark:ring-neutral-700 md:h-72 md:w-72 lg:h-80 lg:w-80">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={`${BASE}/profile.png`}
           alt="Jake Tsogtsaikhan"
-          fill
-          className="object-cover object-top"
-          priority
+          className="h-full w-full object-cover object-top"
         />
       </div>
 
