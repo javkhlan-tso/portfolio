@@ -61,7 +61,7 @@ function Card({ period, title, organization, type }: Omit<JourneyItem, "side">) 
     <div
       className={`rounded-xl p-6 shadow-md shadow-black/10 dark:shadow-black/30 ring-1 ring-black/5 dark:ring-white/10 transition-transform duration-200 hover:-translate-y-1.5 ${
         isEducation
-          ? "bg-blue-50 dark:bg-blue-950/40"
+          ? "bg-neutral-100 dark:bg-neutral-800"
           : "bg-white dark:bg-neutral-900"
       }`}
     >
@@ -72,7 +72,7 @@ function Card({ period, title, organization, type }: Omit<JourneyItem, "side">) 
         {isEducation && (
           <GraduationCap
             size={22}
-            className="mt-1 shrink-0 text-blue-400 dark:text-blue-400"
+            className="mt-1 shrink-0 text-neutral-400 dark:text-neutral-500"
           />
         )}
       </div>
