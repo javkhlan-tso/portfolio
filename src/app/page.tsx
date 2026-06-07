@@ -1,15 +1,15 @@
-import Hero from "@/components/Hero";
+import Home from "@/components/Home";
 import About from "@/components/About";
-import Experience from "@/components/Experience";
+import Journey from "@/components/Journey";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
-export default function Home() {
+export default function Page() {
   return (
     <main>
-      <Hero />
+      <Home />
       <About />
-      <Experience />
+      <Journey />
       <Projects />
       <Contact />
     </main>
