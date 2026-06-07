@@ -24,7 +24,7 @@ export default function Home() {
         Jake Tsogtsaikhan
       </h1>
 
-      <div className="grid w-fit grid-cols-[auto_auto_auto] items-center gap-x-3 gap-y-1 text-2xl text-neutral-500 dark:text-neutral-400">
+      <div className="grid w-fit grid-cols-[auto_auto_auto] items-center gap-x-3 gap-y-1 text-2xl text-neutral-500 dark:text-neutral-400 lg:mt-2">
         <span className="text-right"></span>
         <span>☕️</span>
         <span className="text-left">AI/ML</span>
